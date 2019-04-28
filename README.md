@@ -13,9 +13,9 @@ Open source Mixly library for Mu vision sensor III
 
 ## What about other library for MuVisionSensor?
 
-* Arduino	`https://github.com/mu-opensource/MuVisionSensorIII`
-* Micro:Bit	`https://github.com/mu-opensource/MuVisionSensor-MakeCode`
+* Arduino	[https://github.com/mu-opensource/MuVisionSensorIII](https://github.com/mu-opensource/MuVisionSensorIII)
+* Micro:Bit	[https://github.com/mu-opensource/MuVisionSensor-MakeCode](https://github.com/mu-opensource/MuVisionSensor-MakeCode)
 
 ## For more information
 
-Check out the official site `http://www.morpx.com/zn.index.html` for links to documentation, issues, and news
+Check out the official site [http://www.morpx.com/zn.index.html](http://www.morpx.com/zn.index.html) for links to documentation, issues, and news
