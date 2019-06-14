@@ -79,7 +79,7 @@ Blockly.LKL_VS2_DISABLE = 'disable';					//'关闭';
 //Camera AWB
 Blockly.LKL_VS2_LOCK_AWB = 'LockAWB';					//'锁定白平衡';
 Blockly.LKL_VS2_WHITE_LIGHT = 'WhiteLight';				//'白光模式';
-Blockly.LKL_VS2_YELLOW_LIGHT = 'YellowLight';			//'黄光模式';
+Blockly.LKL_VS2_YELLOW_LIGHT = 'YellowLght';			//'黄光模式';
 
 //Other
 Blockly.LKL_VS2_COLOR = 'color';						//'颜色';

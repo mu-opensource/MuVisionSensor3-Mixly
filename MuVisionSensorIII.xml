@@ -1,0 +1,52 @@
+<!--type="company" 
+	block="block/mu_vision_sensor2.mixly.block.js" 
+	generator="generator/mu_vision_sensor2.mixly.generator.js"  
+	language="language/morpx_muvs-ab2/"
+	lib="MuVisionSensor/"
+-->
+<script type="text/javascript" src="../../blocks/company/mu_vision_sensor2.mixly.block.js"></script>
+<script type="text/javascript" src="../../generators/arduino/company/mu_vision_sensor2.mixly.generator.js"></script>
+
+<category id="morpxVS2" name="MuVisionSensorIII" colour="#EF5411">
+	<!-- 人工智能-->
+	<category id="morpxVS2_1" name="设置模块" colour="#EF5411">
+		<block type="Vs2MuInit"></block>
+		<block type="Vs2Setup"></block>
+		<block type="Vs2Reset"></block>
+		<block type="Vs2SetLEDColor">
+	        <value name="LEDLevel">
+	            <shadow type="math_number">
+	                <field name="NUM">1</field>
+	            </shadow>
+	        </value>
+	    </block>
+		<block type="Vs2VisionBegin"></block>
+		<block type="Vs2SetVisionLevel"></block>
+		<block type="Vs2SetVisionZoom"></block>
+		<block type="Vs2SetUARTBaud"></block>
+		<block type="Vs2SetCameraWhiteBalance"></block>
+		<block type="Vs2SetCameraHFR"></block>
+	</category>
+	<category id="morpxVS2_2" name="运行模块" colour="#EAA20A">
+		<block type="Vs2Detected"></block>
+		<block type="Vs2DetectedRegionColor">
+	        <value name="XValue">
+	            <shadow type="math_number">
+	                <field name="NUM">50</field>
+	            </shadow>
+	        </value>
+	        <value name="YValue">
+	            <shadow type="math_number">
+	                <field name="NUM">50</field>
+	            </shadow>
+	        </value>
+	    </block>
+		<block type="Vs2DetectedColorDetect"></block>
+		<block type="Vs2GetMessage"></block>
+		<block type="Vs2GetCardType"></block>
+		<block type="Vs2GetColorLabel"></block>
+	</category>
+</category>
+
+
+

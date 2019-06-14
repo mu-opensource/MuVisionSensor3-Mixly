@@ -12,36 +12,29 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#ifndef ARDUINO_LIB_MUVISIONSENSOR_SRC_MU_VISION_SENSOR_UART_INTERFACE_H_
-#define ARDUINO_LIB_MUVISIONSENSOR_SRC_MU_VISION_SENSOR_UART_INTERFACE_H_
+#ifndef ARDUINO_LIB_MUVISIONSENSOR_SRC_MU_VISION_SENSOR_I2C_INTERFACE_H_
+#define ARDUINO_LIB_MUVISIONSENSOR_SRC_MU_VISION_SENSOR_I2C_INTERFACE_H_
 
 #include "mu_vision_sensor_interface.h"
 
-class MuVsUartMethod : public MuVsMethod {
+class MuVsI2CMethod : public MuVsMethod {
  public:
-  MuVsUartMethod(uint32_t address);
-  virtual ~MuVsUartMethod(void);
-  MuVsUartMethod(const MuVsUartMethod&) = delete;
-  MuVsUartMethod& operator=(const MuVsUartMethod &) = delete;
+  MuVsI2CMethod(uint32_t address);
+  virtual ~MuVsI2CMethod(void);
+  MuVsI2CMethod(const MuVsI2CMethod&) = delete;
+  MuVsI2CMethod& operator=(const MuVsI2CMethod &) = delete;
 
-//  virtual uint32_t UartAvailable(void) = 0;
-  virtual uint32_t UartRead(uint8_t* temp, uint8_t length) = 0;
-  virtual uint32_t UartWrite(uint8_t* temp, uint8_t length) = 0;
+  virtual uint32_t I2CRead(uint8_t reg_address, uint8_t* temp) = 0;
+  virtual uint32_t I2CWrite(uint8_t reg_address, uint8_t value) = 0;
 
-//  virtual mu_err_t begin(uint32_t speed) override;
   virtual mu_err_t Get(const uint8_t reg_address,
                        uint8_t* value) override;
   virtual mu_err_t Set(const uint8_t reg_address,
                        const uint8_t value) override;
-  mu_err_t Read(uint8_t* mu_address,
-                MuVsMessageVisionType* vision_type,
+  mu_err_t Read(MuVsMessageVisionType vision_type,
                 MuVsVisionState* vision_state);
-  mu_err_t GetMessage(MuVsMessageVisionType);
 
  private:
-  mu_err_t GetProtocolHead(uint8_t* buf);
-  mu_err_t GetProtocolBody(uint8_t* buf);
-  uint8_t SumCheck(uint8_t* buf, uint8_t len);
 
  protected:
 };
