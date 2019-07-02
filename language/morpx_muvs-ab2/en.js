@@ -17,6 +17,7 @@ Blockly.LKL_VS2_HELP_WARNING_ONLY_USE_IN_CALLBACK_MODE = '警告！该函数只�
 
 /*Warning文本**/
 Blockly.LKL_VS2_WARNING_SETUP_ONLY = 'This block can only be placed in the setup block!';
+Blockly.LKL_VS2_WARNING_MU_INIT = 'Please DON\'T connect MU and your computer on Serial port in the same time, this operation will cause the computer to print error characters or communication abnormalities.';             //'请勿同时使用Serial连接MU与电脑打印字符，此操作会导致电脑端打印字符错乱或通信异常';
 
 /*参数文本*/
 //LED color type
@@ -87,25 +88,20 @@ Blockly.LKL_VS2_COLOR = 'color';						//'颜色';
 /*模块文本*/
 Blockly.LKL_VS2_MU = 'initialize';									//'初始化';
 Blockly.LKL_VS2_MODE = 'mode';										//'模式';
-Blockly.LKL_VS2_SetupVS = 'setupVisionSensor';						//'设置';
+Blockly.LKL_VS2_SetupVS = 'setup';          						//'设置';
 Blockly.LKL_VS2_SERIAL = 'port';									//'串口号';
 Blockly.LKL_VS2_ADDRESS = 'address';								//'地址';
 Blockly.LKL_VS2_RESET = 'setDefault';								//'恢复默认设置';
-Blockly.LKL_VS2_SAVE = 'saveSettings';								//'保存设置';
 Blockly.LKL_VS2_LED_DETECT_COLOR = 'detectedColor';					//'识别到物体亮';
 Blockly.LKL_VS2_LED_UNDETECT_COLOR = 'undetectedColor';				//'没识别到物体亮';
 Blockly.LKL_VS2_BRIGHTNESS = 'brightness';							//'亮度';
-Blockly.LKL_VS2_SET_VISION_TYPE = 'visionType';						//'算法';
-Blockly.LKL_VS2_SET_VISION = 'setVision';							//'设置算法';
-Blockly.LKL_VS2_SET_VISION_LEVEL = 'setVisionLevel';				//'设置识别等级';
+Blockly.LKL_VS2_VISION_TYPE = 'vision';						        //'算法';
+Blockly.LKL_VS2_SET_VISION_LEVEL = 'level';				            //'设置识别等级';
 Blockly.LKL_VS2_SET_FRAME_ROTATE = 'rotateFrame';					//'图像翻转';
-Blockly.LKL_VS2_SET_CAMERA_HFR = 'cameraHFR';						//'高帧率模式';
-Blockly.LKL_VS2_SET_CAMERA_AWB = 'setCameraAWB';					//'设置摄像头白平衡';
-Blockly.LKL_VS2_SET_VISION_ZOOM = 'setVisionZoom';					//'设置图像缩放等级';
-Blockly.LKL_VS2_SET_UART_STATUS = 'setUARTStatus';					//'设置串口状态';
-Blockly.LKL_VS2_SET_UART_OUTPUT_TYPE = 'setUARTOutputType';			//'设置串口输出模式';
-Blockly.LKL_VS2_SET_UART_BAUD = 'setUARTBaudrate';					//'设置串口波特率';
-// Blockly.LKL_VS2_SEARCH = 'search';									//'搜索目标';
+Blockly.LKL_VS2_SET_CAMERA_HFR = 'cameraHFRMode';   				//'高帧率模式';
+Blockly.LKL_VS2_SET_CAMERA_AWB = 'cameraAWB';					    //'摄像头白平衡';
+Blockly.LKL_VS2_SET_VISION_ZOOM = 'zoom';   					    //'图像缩放等级';
+Blockly.LKL_VS2_SET_UART_BAUD = 'UARTBaudrate';					    //'串口波特率';
 Blockly.LKL_VS2_DETECTED = 'detect';								//'检测到';
 Blockly.LKL_VS2_GET_DETECTED_MESSAGE = 'get';						//'获取';
 Blockly.LKL_VS2_VALUE = 'value';									//'值';

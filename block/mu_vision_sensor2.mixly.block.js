@@ -32,19 +32,13 @@ var lVisionLevel = [[Blockly.LKL_VS2_AUTO,"kLevelDefault"],
 
 var lVsMu = [["Mu00", "0"],["Mu01", "1"],["Mu10", "2"],["Mu11", "3"]];
 
-// var lLedColor = [[Blockly.LKL_VS2_LED_CLOSE, "kLedClose"], [Blockly.LKL_VS2_LED_RED, "kLedRed"], 
-//                 [Blockly.LKL_VS2_LED_GREEN, "kLedGreen"], [Blockly.LKL_VS2_LED_YELLOW, "kLedYellow"], 
-//                 [Blockly.LKL_VS2_LED_BLUE, "kLedBlue"], [Blockly.LKL_VS2_LED_PURPLE, "kLedPurple"], 
-//                 [Blockly.LKL_VS2_LED_CYAN, "kLedCyan"], [Blockly.LKL_VS2_LED_WHITE, "kLedWhite"]
-//                 ];
-
-Blockly.Blocks.VisionSensor.HUE = "#EF5411";            //30;
-Blockly.Blocks.VisionSensor.HUE_SetupMode = "#EF5411";  //30;
-Blockly.Blocks.VisionSensor.HUE_RunMode = "#EAA20A"; //60;
+Blockly.Blocks.VisionSensor.HUE = "#EF5411";
+Blockly.Blocks.VisionSensor.HUE_SetupMode = "#EF5411";
+Blockly.Blocks.VisionSensor.HUE_RunMode = "#EAA20A";
 
 Blockly.Blocks['Vs2MuInit'] = {
   init: function() {
-    var dropdown_list = profile.default.serial_select.concat([["I2C","Wire"]])
+    var dropdown_list = [["I2C","Wire"]].concat(profile.default.serial_select);
     this.setColour(Blockly.Blocks.VisionSensor.HUE);
     this.appendDummyInput()
         .appendField(Blockly.LKL_VS2_MU)
@@ -54,6 +48,13 @@ Blockly.Blocks['Vs2MuInit'] = {
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setTooltip(Blockly.LKL_VS2_HELP_INIT);
+  },
+  onchange:function(e) {
+    if (this.getFieldValue("SERIAL") == "Serial") {
+      this.setWarningText(Blockly.LKL_VS2_WARNING_MU_INIT);
+    } else {
+      this.setWarningText();
+    }
   }
 };
 
@@ -89,7 +90,7 @@ Blockly.Blocks['Vs2Reset'] = {
 
 Blockly.Blocks['Vs2SetLEDColor'] = {
   init: function() {
-    var led_color = ['#000','#f00','#0f0','#ff0','#00f','#f0f','#0ff','#fff'];
+    var led_color = ['#fff','#000','#f00','#0f0','#ff0','#00f','#f0f','#0ff'];
     var color_detected = new Blockly.FieldColour('#0000ff');
     color_detected.setColours(led_color).setColumns(3);
     var color_undetected = new Blockly.FieldColour('#ff0000');
@@ -126,7 +127,7 @@ Blockly.Blocks['Vs2VisionBegin'] = {
     this.setColour(Blockly.Blocks.VisionSensor.HUE_SetupMode);
     this.appendDummyInput()
         .appendField(new Blockly.FieldDropdown(lVs2VisionStatus), "VisionStatus")
-        .appendField(Blockly.LKL_VS2_SET_VISION_TYPE)
+        .appendField(Blockly.LKL_VS2_VISION_TYPE)
         .appendField(new Blockly.FieldDropdown(VS_VISION_TYPE), "VisionType");
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
@@ -145,7 +146,7 @@ Blockly.Blocks['Vs2SetVisionLevel'] = {
   init: function() {
     this.setColour(Blockly.Blocks.VisionSensor.HUE_SetupMode);
     this.appendDummyInput()
-        .appendField(Blockly.LKL_VS2_SET_VISION)
+        .appendField(Blockly.LKL_VS2_VISION_TYPE)
         .appendField(new Blockly.FieldDropdown(VS_VISION_TYPE), "VisionType")
         .appendField(' '+Blockly.LKL_VS2_SET_VISION_LEVEL)
         .appendField(new Blockly.FieldDropdown(lVisionLevel), "VisionLevel");
@@ -320,7 +321,7 @@ Blockly.Blocks['Vs2GetColorLabel'] = {
     this.appendDummyInput()
         .appendField(Blockly.LKL_VS2_GET_DETECTED_MESSAGE)
         .appendField(new Blockly.FieldDropdown(lVsMu), "MU_OBJ")
-        .appendField(Blockly.LKL_VS2_SET_VISION_TYPE)
+        .appendField(Blockly.LKL_VS2_VISION_TYPE)
         .appendField(Blockly.LKL_VS2_VISION_COLOR_RECOGNITION);
     this.appendDummyInput()
         .appendField(Blockly.LKL_VS2_COLOR+"=")
@@ -344,13 +345,12 @@ Blockly.Blocks['Vs2GetMessage'] = {
                             [Blockly.LKL_VS2_STATE_VALUE_LABEL,"kLabel"]
                             ];
     var vision_type = VS_VISION_TYPE.slice();
-    // vision_type.splice(1,1);
 
     this.setColour(Blockly.Blocks.VisionSensor.HUE_RunMode);
     this.appendDummyInput()
 				.appendField(Blockly.LKL_VS2_GET_DETECTED_MESSAGE)
         .appendField(new Blockly.FieldDropdown(lVsMu), "MU_OBJ")
-        .appendField(Blockly.LKL_VS2_SET_VISION_TYPE)
+        .appendField(Blockly.LKL_VS2_VISION_TYPE)
         .appendField(new Blockly.FieldDropdown(vision_type), "VISION_TYPE");
     this.vision_type_ = '';
     this.generateMessageType();
@@ -440,7 +440,7 @@ Blockly.Blocks['Vs2GetCardType'] = {
     this.appendDummyInput()
         .appendField(Blockly.LKL_VS2_GET_DETECTED_MESSAGE)
         .appendField(new Blockly.FieldDropdown(lVsMu), "MuObj")
-        .appendField(Blockly.LKL_VS2_SET_VISION_TYPE)
+        .appendField(Blockly.LKL_VS2_VISION_TYPE)
         .appendField(new Blockly.FieldDropdown(lVisionCardType), "VisionCardType")
         .appendField(" "+Blockly.LKL_VS2_CARD_TYPE+"=");
     this.vision_type_ = this.getFieldValue("VisionCardType");

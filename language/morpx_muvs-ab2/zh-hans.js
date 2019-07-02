@@ -15,6 +15,7 @@ Blockly.LKL_VS2_HELP_VISION_ZOOM = '设置图像缩放等级，等级升高，�
 
 /*Warning文本**/
 Blockly.LKL_VS2_WARNING_SETUP_ONLY = '该模块只能置于设置模块中！';
+Blockly.LKL_VS2_WARNING_MU_INIT = '请勿同时使用Serial连接MU与电脑打印字符，此操作会导致电脑端打印字符错乱或通信异常';
 
 /*参数文本*/
 //LED color type
@@ -94,18 +95,13 @@ Blockly.LKL_VS2_SAVE = '保存设置';
 Blockly.LKL_VS2_LED_DETECT_COLOR = '识别到颜色';
 Blockly.LKL_VS2_LED_UNDETECT_COLOR = '未识别到颜色';
 Blockly.LKL_VS2_BRIGHTNESS = '亮度';
-Blockly.LKL_VS2_SET_VISION_TYPE = '算法';
-Blockly.LKL_VS2_SET_VISION = '设置算法';
+Blockly.LKL_VS2_VISION_TYPE = '算法';
 Blockly.LKL_VS2_SET_FRAME_ROTATE = '翻转图像';
 Blockly.LKL_VS2_SET_CAMERA_HFR = '高帧率模式';
-Blockly.LKL_VS2_SET_CAMERA_AWB = '设置摄像头白平衡';
+Blockly.LKL_VS2_SET_CAMERA_AWB = '摄像头白平衡';
 Blockly.LKL_VS2_SET_VISION_LEVEL = '性能';
 Blockly.LKL_VS2_SET_VISION_ZOOM = '数码变焦';
-// Blockly.LKL_VS2_SET_USB_STATUS = '设置USB状态';
-// Blockly.LKL_VS2_SET_USB_OUTPUT_TYPE = '设置USB输出模式';
-// Blockly.LKL_VS2_SET_UART_STATUS = '设置串口状态';
-// Blockly.LKL_VS2_SET_UART_OUTPUT_TYPE = '设置串口输出模式';
-Blockly.LKL_VS2_SET_UART_BAUD = '设置串口波特率';
+Blockly.LKL_VS2_SET_UART_BAUD = '串口波特率';
 Blockly.LKL_VS2_SEARCH = '搜索目标';
 Blockly.LKL_VS2_DETECTED = '检测到';
 Blockly.LKL_VS2_IS_CARD_TYPE = '识别到卡片的卡片类型为';
