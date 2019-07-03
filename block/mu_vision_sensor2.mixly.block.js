@@ -105,8 +105,8 @@ Blockly.Blocks['Vs2SetLEDColor'] = {
         .appendField(' '+Blockly.LKL_VS2_LED_UNDETECT_COLOR)
         .appendField(color_undetected, "LEDColorUndetect");
     this.appendValueInput("LEDLevel")
-        .setCheck([Number, Boolean])
-        .appendField(' '+Blockly.LKL_VS2_BRIGHTNESS+'(0~15)');
+        .appendField(' '+Blockly.LKL_VS2_BRIGHTNESS+'(0~15)')
+        .setCheck([Number, Boolean]);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setInputsInline(true);
@@ -280,14 +280,16 @@ Blockly.Blocks['Vs2DetectedRegionColor'] = {
     this.setColour(Blockly.Blocks.VisionSensor.HUE_RunMode);
     this.appendDummyInput()
         .appendField(new Blockly.FieldDropdown(lVsMu), "MU_OBJ")
-        .appendField(Blockly.LKL_VS2_DETECTED)
-        .appendField(Blockly.LKL_VS2_VISION_COLOR_RECOGNITION);
+        .appendField(Blockly.LKL_VS2_RECOGNIZED)
+        .appendField(Blockly.LKL_VS2_COORDINATE);
     this.appendValueInput('XValue')
         .setCheck(Number)
         .appendField('x=');
     this.appendValueInput('YValue')
         .setCheck(Number)
         .appendField('y=');
+    this.appendDummyInput()
+        .appendField(Blockly.LKL_VS2_COLOR);
     this.setOutput(true, Number);
     this.setInputsInline(true);
   },
@@ -303,9 +305,8 @@ Blockly.Blocks['Vs2DetectedColorDetect'] = {
     this.appendDummyInput()
         .appendField(new Blockly.FieldDropdown(lVsMu), "MU_OBJ")
         .appendField(Blockly.LKL_VS2_DETECTED)
-        .appendField(Blockly.LKL_VS2_VISION_COLOR_DETECT)
-        .appendField(Blockly.LKL_VS2_COLOR+"=")
-        .appendField(color, 'DetectColor');
+        .appendField(color, 'DetectColor')
+        .appendField(Blockly.LKL_VS2_COLOR_BLOCK);
 
     this.setOutput(true, Number);
   }

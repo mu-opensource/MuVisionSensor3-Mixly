@@ -6,7 +6,6 @@ goog.provide('Blockly.Msg.en');
 
 goog.require('Blockly.Msg');
 
-/*LKL_(MODEL)_(FUNCTION)_(OPRATION)*/
 /*          Morpx Vision Sensor          */
 /*Help文本*/
 Blockly.LKL_VS2_HELP_INIT = '初始化视觉传感器，并选择相关的串口号';
@@ -41,6 +40,7 @@ Blockly.LKL_VS2_HIGH_ACCURACY = 'highAccuracy';			//'准确度优先';
 Blockly.LKL_VS2_UART_OPEN = 'Open';						//'打开';
 Blockly.LKL_VS2_UART_CLOSE = 'Close';					//'关闭';
 //Vision type
+Blockly.LKL_VS2_COLOR_BLOCK = 'ColorBlock';             //'色块';
 Blockly.LKL_VS2_VISION_COLOR_DETECT = 'ColorDetect';	//'颜色识别';
 Blockly.LKL_VS2_VISION_COLOR_RECOGNITION = 'ColorRecognition';	//'颜色检测';
 Blockly.LKL_VS2_VISION_BALL = 'Ball';					//'球';
@@ -93,7 +93,7 @@ Blockly.LKL_VS2_SERIAL = 'port';									//'串口号';
 Blockly.LKL_VS2_ADDRESS = 'address';								//'地址';
 Blockly.LKL_VS2_RESET = 'setDefault';								//'恢复默认设置';
 Blockly.LKL_VS2_LED_DETECT_COLOR = 'detectedColor';					//'识别到物体亮';
-Blockly.LKL_VS2_LED_UNDETECT_COLOR = 'undetectedColor';				//'没识别到物体亮';
+Blockly.LKL_VS2_LED_UNDETECT_COLOR = 'else';				        //'没识别到物体亮';
 Blockly.LKL_VS2_BRIGHTNESS = 'brightness';							//'亮度';
 Blockly.LKL_VS2_VISION_TYPE = 'vision';						        //'算法';
 Blockly.LKL_VS2_SET_VISION_LEVEL = 'level';				            //'设置识别等级';
@@ -103,11 +103,11 @@ Blockly.LKL_VS2_SET_CAMERA_AWB = 'cameraAWB';					    //'摄像头白平衡';
 Blockly.LKL_VS2_SET_VISION_ZOOM = 'zoom';   					    //'图像缩放等级';
 Blockly.LKL_VS2_SET_UART_BAUD = 'UARTBaudrate';					    //'串口波特率';
 Blockly.LKL_VS2_DETECTED = 'detect';								//'检测到';
+Blockly.LKL_VS2_RECOGNIZED = 'recognized';                          //'识别到';
 Blockly.LKL_VS2_GET_DETECTED_MESSAGE = 'get';						//'获取';
 Blockly.LKL_VS2_VALUE = 'value';									//'值';
 Blockly.LKL_VS2_GET_PIX_COLOR = 'getPosition';						//'捕获坐标';
 Blockly.LKL_VS2_CARD_TYPE = 'cardType';								//'卡片类型';
 Blockly.LKL_VS2_SET_DETECT_COLOR = 'setDetectColor';				//'设置识别颜色';
-Blockly.LKL_VS2_SET_X_VALUE = 'setXValue';							//'设置坐标X值';
-Blockly.LKL_VS2_SET_Y_VALUE = 'setYValue';							//'设置坐标Y值';
+Blockly.LKL_VS2_COORDINATE = 'coordinate';                          //'坐标';
 
