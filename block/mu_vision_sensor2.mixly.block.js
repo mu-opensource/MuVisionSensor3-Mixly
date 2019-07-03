@@ -4,9 +4,9 @@ goog.provide('Blockly.Blocks.VisionSensor');
 
 goog.require('Blockly.Blocks');
 
-var lVisionCardType = [["🔳 "+Blockly.LKL_VS2_VISION_SHAPE_CARD, "VISION_SHAPE_CARD_DETECT"],
-                      ["🔳 "+Blockly.LKL_VS2_VISION_TRAFFIC_CARD, "VISION_TRAFFIC_CARD_DETECT"],
-                      ["🔳 "+Blockly.LKL_VS2_VISION_NUM_CARD, "VISION_NUM_CARD_DETECT"],
+var lVisionCardType = [["🔳"+Blockly.LKL_VS2_VISION_SHAPE_CARD, "VISION_SHAPE_CARD_DETECT"],
+                      ["🔳"+Blockly.LKL_VS2_VISION_TRAFFIC_CARD, "VISION_TRAFFIC_CARD_DETECT"],
+                      ["🔳"+Blockly.LKL_VS2_VISION_NUM_CARD, "VISION_NUM_CARD_DETECT"],
                       ];
 var VS_VISION_TYPE = [["🌈 "+Blockly.LKL_VS2_VISION_COLOR_DETECT, "VISION_COLOR_DETECT"],
                       ["🌈 "+Blockly.LKL_VS2_VISION_COLOR_RECOGNITION, "VISION_COLOR_RECOGNITION"],
@@ -422,7 +422,7 @@ Blockly.Blocks['Vs2GetCardType'] = {
                               ["⬅ "+Blockly.LKL_VS2_CARD_TURN_LEFT, "MU_TRAFFIC_CARD_LEFT"],
                               ["➡ "+Blockly.LKL_VS2_CARD_TURN_RIGHT, "MU_TRAFFIC_CARD_RIGHT"],
                               ["🔙 "+Blockly.LKL_VS2_CARD_TURN_AROUND, "MU_TRAFFIC_CARD_TURN_AROUND"],
-                              ["🅿️ "+Blockly.LKL_VS2_CARD_STOP, "MU_TRAFFIC_CARD_PARK"]
+                              ["🅿 "+Blockly.LKL_VS2_CARD_STOP, "MU_TRAFFIC_CARD_PARK"]
                               ];
     this.number_card_type_ = [["1", "1"],["2", "2"],["3", "3"],["4", "4"],["5", "5"],
                             ["6", "6"],["7", "7"],["8", "8"],["9", "9"],["0", "0"]
