@@ -41,7 +41,7 @@ Blockly.LKL_VS2_UART_OPEN = 'Open';						//'打开';
 Blockly.LKL_VS2_UART_CLOSE = 'Close';					//'关闭';
 //Vision type
 Blockly.LKL_VS2_COLOR_BLOCK = 'ColorBlock';             //'色块';
-Blockly.LKL_VS2_VISION_COLOR_DETECT = 'ColorDetect';	//'颜色识别';
+Blockly.LKL_VS2_VISION_COLOR_DETECT = 'ColorBlock';	//'颜色识别';
 Blockly.LKL_VS2_VISION_COLOR_RECOGNITION = 'ColorRecognition';	//'颜色检测';
 Blockly.LKL_VS2_VISION_BALL = 'Ball';					//'球';
 Blockly.LKL_VS2_VISION_LINE = 'Line';					//'线条';
@@ -80,7 +80,7 @@ Blockly.LKL_VS2_DISABLE = 'disable';					//'关闭';
 //Camera AWB
 Blockly.LKL_VS2_LOCK_AWB = 'LockAWB';					//'锁定白平衡';
 Blockly.LKL_VS2_WHITE_LIGHT = 'WhiteLight';				//'白光模式';
-Blockly.LKL_VS2_YELLOW_LIGHT = 'YellowLght';			//'黄光模式';
+Blockly.LKL_VS2_YELLOW_LIGHT = 'YellowLight';			//'黄光模式';
 
 //Other
 Blockly.LKL_VS2_COLOR = 'color';						//'颜色';
@@ -91,23 +91,23 @@ Blockly.LKL_VS2_MODE = 'mode';										//'模式';
 Blockly.LKL_VS2_SetupVS = 'setup';          						//'设置';
 Blockly.LKL_VS2_SERIAL = 'port';									//'串口号';
 Blockly.LKL_VS2_ADDRESS = 'address';								//'地址';
-Blockly.LKL_VS2_RESET = 'setDefault';								//'恢复默认设置';
-Blockly.LKL_VS2_LED_DETECT_COLOR = 'detectedColor';					//'识别到物体亮';
+Blockly.LKL_VS2_RESET = 'reset to default';								//'恢复默认设置';
+Blockly.LKL_VS2_LED_DETECT_COLOR = 'when detected then';				//'识别到物体亮';
 Blockly.LKL_VS2_LED_UNDETECT_COLOR = 'else';				        //'没识别到物体亮';
 Blockly.LKL_VS2_BRIGHTNESS = 'brightness';							//'亮度';
-Blockly.LKL_VS2_VISION_TYPE = 'vision';						        //'算法';
+Blockly.LKL_VS2_VISION_TYPE = 'algorithm';						        //'算法';
 Blockly.LKL_VS2_SET_VISION_LEVEL = 'level';				            //'设置识别等级';
-Blockly.LKL_VS2_SET_FRAME_ROTATE = 'rotateFrame';					//'图像翻转';
-Blockly.LKL_VS2_SET_CAMERA_HFR = 'cameraHFRMode';   				//'高帧率模式';
-Blockly.LKL_VS2_SET_CAMERA_AWB = 'cameraAWB';					    //'摄像头白平衡';
+Blockly.LKL_VS2_SET_FRAME_ROTATE = 'rotate Frame';					//'图像翻转';
+Blockly.LKL_VS2_SET_CAMERA_HFR = 'high FPS mode';   				//'高帧率模式';
+Blockly.LKL_VS2_SET_CAMERA_AWB = 'camera white balance';					    //'摄像头白平衡';
 Blockly.LKL_VS2_SET_VISION_ZOOM = 'zoom';   					    //'图像缩放等级';
-Blockly.LKL_VS2_SET_UART_BAUD = 'UARTBaudrate';					    //'串口波特率';
-Blockly.LKL_VS2_DETECTED = 'detect';								//'检测到';
+Blockly.LKL_VS2_SET_UART_BAUD = 'UART baudrate';					    //'串口波特率';
+Blockly.LKL_VS2_DETECTED = 'detected';								//'检测到';
 Blockly.LKL_VS2_RECOGNIZED = 'recognized';                          //'识别到';
 Blockly.LKL_VS2_GET_DETECTED_MESSAGE = 'get';						//'获取';
 Blockly.LKL_VS2_VALUE = 'value';									//'值';
-Blockly.LKL_VS2_GET_PIX_COLOR = 'getPosition';						//'捕获坐标';
-Blockly.LKL_VS2_CARD_TYPE = 'cardType';								//'卡片类型';
+Blockly.LKL_VS2_GET_PIX_COLOR = 'get Position';						//'捕获坐标';
+Blockly.LKL_VS2_CARD_TYPE = 'type';								//'卡片类型';
 Blockly.LKL_VS2_SET_DETECT_COLOR = 'setDetectColor';				//'设置识别颜色';
 Blockly.LKL_VS2_COORDINATE = 'coordinate';                          //'坐标';
 
