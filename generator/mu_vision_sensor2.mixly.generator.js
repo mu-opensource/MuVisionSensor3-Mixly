@@ -43,15 +43,10 @@ Blockly.Arduino.Vs2MuInit = function() {
   var address = 0x60 + offset;
   Blockly.Arduino.definitions_['include_vs2'] = '#include "MuVisionSensor.h"';
   Blockly.Arduino.definitions_['var_vs2_mu'+dropdown_mu_obj] = 'MuVisionSensor '+kMuName+dropdown_mu_obj+'(0x'+address.toString(16)+');';
-  // var mode = '';
-  // if (dropdown_serial == 'Wire') {
-  //   Blockly.Arduino.definitions_['define_i2c'] = '#include <Wire.h>';
-  //   Blockly.Arduino.setups_['setup_i2c'] = 'Wire.begin();\n';
-  //   mode = 'kI2CMode';
-  // } else {
-  //   mode = 'kSerialMode';
-  // }
-  // var code = kMuName+dropdown_mu_obj+'.begin(&'+dropdown_serial+', '+mode+');\n';
+  if (dropdown_serial == 'Wire') {
+    Blockly.Arduino.definitions_['define_i2c'] = '#include <Wire.h>';
+    Blockly.Arduino.setups_['setup_i2c'] = 'Wire.begin();\n';
+  }
   var code = kMuName+dropdown_mu_obj+'.begin(&'+dropdown_serial+');\n';
   return code;
 };
