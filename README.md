@@ -13,8 +13,8 @@ Open source Mixly library for Mu vision sensor III
 
 ## What about other library for MuVisionSensor?
 
-* Arduino	[https://github.com/mu-opensource/MuVisionSensorIII](https://github.com/mu-opensource/MuVisionSensorIII)
-* Micro:Bit	[https://github.com/mu-opensource/MuVisionSensor-MakeCode](https://github.com/mu-opensource/MuVisionSensor-MakeCode)
+* Arduino	[https://github.com/mu-opensource/MuVisionSensor3](https://github.com/mu-opensource/MuVisionSensor3)
+* Micro:Bit	[https://github.com/mu-opensource/pxt-MuVisionSensor3](https://github.com/mu-opensource/pxt-MuVisionSensor3)
 
 ## For more information
 
