@@ -1,6 +1,6 @@
 [![Morpx-bbs](http://bbs.morpx.com/template/mu/images/logo.png)](http://bbs.morpx.com/forum.php)
-[![Git-rep](https://img.shields.io/github/repo-size/mu-opensource/MuVisionSensorIII-Mixly.svg)](https://github.com/mu-opensource/MuVisionSensorIII-Mixly)
-[![Git-release](https://img.shields.io/github/downloads/mu-opensource/MuVisionSensorIII-Mixly/total.svg)](https://github.com/mu-opensource/MuVisionSensorIII-Mixly/releases)
+[![Git-rep](https://img.shields.io/github/repo-size/mu-opensource/MuVisionSensor3-Mixly.svg)](https://github.com/mu-opensource/MuVisionSensor3-Mixly)
+[![Git-release](https://img.shields.io/github/downloads/mu-opensource/MuVisionSensor3-Mixly/total.svg)](https://github.com/mu-opensource/MuVisionSensor3-Mixly/releases)
 
 
 MuVisionSensorIII-Mixly
