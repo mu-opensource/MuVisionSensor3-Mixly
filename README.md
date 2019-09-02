@@ -3,12 +3,12 @@
 [![Git-release](https://img.shields.io/github/downloads/mu-opensource/MuVisionSensor3-Mixly/total.svg)](https://github.com/mu-opensource/MuVisionSensor3-Mixly/releases)
 
 
-MuVisionSensorIII-Mixly
+MuVisionSensor3-Mixly
 =======================
 
 [![Pic-vision-sensor](http://mai.morpx.com/images/page201904/banner1.jpg)](http://mai.morpx.com/)
 
-Open source Mixly library for Mu vision sensor III
+Open source Mixly library for Mu vision sensor 3
 
 
 ## What about other library for MuVisionSensor?

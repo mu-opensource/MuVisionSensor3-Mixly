@@ -7,9 +7,9 @@
 <script type="text/javascript" src="../../blocks/company/mu_vision_sensor2.mixly.block.js"></script>
 <script type="text/javascript" src="../../generators/arduino/company/mu_vision_sensor2.mixly.generator.js"></script>
 
-<category id="morpxVS2" name="MuVisionSensorIII" colour="#EF5411">
+<category id="morpxMU3" name="MuVisionSensor3" colour="#EF5411">
 	<!-- 人工智能-->
-	<category id="morpxVS2_1" name="设置模块" colour="#EF5411">
+	<category id="morpxMU3_Setup" name="设置模块" colour="#EF5411">
 		<block type="Vs2MuInit"></block>
 		<block type="Vs2Setup"></block>
 		<block type="Vs2Reset"></block>
@@ -27,7 +27,7 @@
 		<block type="Vs2SetCameraWhiteBalance"></block>
 		<block type="Vs2SetCameraHFR"></block>
 	</category>
-	<category id="morpxVS2_2" name="运行模块" colour="#EAA20A">
+	<category id="morpxMU3_Run" name="运行模块" colour="#EAA20A">
 		<block type="Vs2Detected"></block>
 		<block type="Vs2DetectedRegionColor">
 	        <value name="XValue">

@@ -1,3 +1,7 @@
+V1.1.7a
+======
+* 1.修改了库名：`MuVisionSensorIII`->`MuVisionSensor3`
+
 V1.1.7
 ======
 * 1.修复了I2C模式下无法初始化MU的问题
