@@ -1,6 +1,6 @@
 [![Morpx-bbs](http://bbs.morpx.com/template/mu/images/logo.png)](http://bbs.morpx.com/forum.php)
-[![Git-rep](https://img.shields.io/github/repo-size/mu-opensource/MuVisionSensorIII.svg)](https://github.com/mu-opensource/MuVisionSensorIII)
-[![Git-release](https://img.shields.io/github/downloads/mu-opensource/MuVisionSensorIII/total.svg)](https://github.com/mu-opensource/MuVisionSensorIII/releases)
+[![Git-rep](https://img.shields.io/github/repo-size/mu-opensource/MuVisionSensor3.svg)](https://github.com/mu-opensource/MuVisionSensor3)
+[![Git-release](https://img.shields.io/github/downloads/mu-opensource/MuVisionSensor3/total.svg)](https://github.com/mu-opensource/MuVisionSensor3/releases)
 
 
 MuVisionSensor
@@ -104,8 +104,8 @@ uint32_t MuVisionSensorI2C::I2CWrite(uint8_t reg_address, uint8_t value);
 
 ## What about other library for MuVisionSensor?
 
-* Mixly		[https://github.com/mu-opensource/MuVisionSensorIII-Mixly](https://github.com/mu-opensource/MuVisionSensorIII-Mixly)
-* Micro:Bit	[https://github.com/mu-opensource/MuVisionSensor-MakeCode](https://github.com/mu-opensource/MuVisionSensor-MakeCode)
+* Mixly		[https://github.com/mu-opensource/MuVisionSensor3-Mixly](https://github.com/mu-opensource/MuVisionSensor3-Mixly)
+* Micro:Bit	[https://github.com/mu-opensource/pxt-MuVisionSensor3](https://github.com/mu-opensource/pxt-MuVisionSensor3)
 
 ## For more information
 

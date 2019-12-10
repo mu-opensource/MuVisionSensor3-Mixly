@@ -5,11 +5,9 @@ goog.provide('Blockly.Msg.zh.hans');
 
 goog.require('Blockly.Msg');
 
-
 /*          Morpx Vision Sensor          */
 /*Help文本*/
 Blockly.LKL_VS2_HELP_INIT = '初始化视觉传感器，并选择相关的端口';
-Blockly.LKL_VS2_HELP_SAVE = '保存视觉传感器的相关设置（只能在设置模式中使用）';
 Blockly.LKL_VS2_HELP_VISION_LEVEL = '设置识别等级，等级升高，误报率降低，识别率也会相应降低';
 Blockly.LKL_VS2_HELP_VISION_ZOOM = '设置图像缩放等级，等级升高，识别距离越远，识别角度越小';
 
@@ -80,14 +78,21 @@ Blockly.LKL_VS2_DISABLE = '关闭';
 Blockly.LKL_VS2_LOCK_AWB = '锁定白平衡';
 Blockly.LKL_VS2_WHITE_LIGHT = '白光模式';
 Blockly.LKL_VS2_YELLOW_LIGHT = '黄光模式';
+Blockly.LKL_VS2_ALL = '所有';
 
 //Other
 Blockly.LKL_VS2_COLOR = '颜色';
+Blockly.LKL_VS2_DEFAULT = '默认';
+Blockly.LKL_VS2_LOW = '低';
+Blockly.LKL_VS2_MID = '中';
+Blockly.LKL_VS2_HIGH = '高';
 
 /*模块文本*/
 Blockly.LKL_VS2_MU = '初始化';
 Blockly.LKL_VS2_MODE = '模式';
 Blockly.LKL_VS2_SetupVS = '设置';
+Blockly.LKL_VS2_SET_RECOGNITION_REGION = '设置识别区域';
+Blockly.LKL_VS2_SET_MIN_RECOGNITION_SIZE = '设置最小识别尺寸';
 Blockly.LKL_VS2_SERIAL = '端口';
 Blockly.LKL_VS2_ADDRESS = '地址';
 Blockly.LKL_VS2_RESET = '恢复默认设置';
@@ -109,3 +114,31 @@ Blockly.LKL_VS2_GET_PIX_COLOR = '捕获坐标';
 Blockly.LKL_VS2_CARD_TYPE = '卡片类型';
 Blockly.LKL_VS2_SET_DETECT_COLOR = '设置识别颜色';
 Blockly.LKL_VS2_COORDINATE = '坐标';
+
+// Light sensor
+Blockly.LKL_VS2_LIGHT_SENSOR = '光线传感器';
+Blockly.LKL_VS2_SET = '设置';
+Blockly.LKL_VS2_SENSITIVITY = '灵敏度';
+Blockly.LKL_VS2_WB_CORRECTION = '白平衡校准';
+Blockly.LKL_VS2_READ = '读取';
+Blockly.LKL_VS2_PROXIMITY = '接近检测';
+Blockly.LKL_VS2_ALS = '环境光检测';
+Blockly.LKL_VS2_GESTURE_SENSOR = '手势检测';
+Blockly.LKL_VS2_GESTURE = '手势';
+Blockly.LKL_VS2_GESTURE_UP = '上划';
+Blockly.LKL_VS2_GESTURE_DOWN = '下划';
+Blockly.LKL_VS2_GESTURE_LEFT = '左划';
+Blockly.LKL_VS2_GESTURE_RIGHT = '右划';
+Blockly.LKL_VS2_GESTURE_LIFT_UP = '前进';
+Blockly.LKL_VS2_GESTURE_PUSH_DOWN = '后退';
+
+// AT WiFi
+Blockly.LKL_VS2_SSID = "名称";
+Blockly.LKL_VS2_PASSWORD = "密码";
+Blockly.LKL_VS2_WAIT_CONNECT = "连接成功";
+Blockly.LKL_VS2_DISCONNECT = "断开连接";
+Blockly.LKL_VS2_CLIENT = "客户端";
+Blockly.LKL_VS2_HOT_SPOT = "热点";
+Blockly.LKL_VS2_TARGET_IP = "目标IP";
+Blockly.LKL_VS2_LOCAL_IP = "本地IP";
+Blockly.LKL_VS2_WRITE = "写入";
